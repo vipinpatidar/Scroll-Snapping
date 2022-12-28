@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+}
+#app {
+  width: 100vw;
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  position: relative;
+}
+
+section {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: black;
+  scroll-snap-align: start;
+  scroll-snap-stop: normal;
+}
+
+.one {
+  background-color: #fff;
+  transition: all 700ms ease 0s;
+}
+.section-css-1 p {
+  font-size: 18px;
+}
+.section-css-1 a {
+  text-decoration: none;
+  color: #e568ac;
+  font-size: 16px;
+  margin: 1.2em auto;
+}
+.section-css-1 a:hover {
+  text-decoration: underline;
+}
+.section-css p {
+  font-size: 18px;
+}
+.section-css a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  margin: 1.2em auto;
+}
+.section-css a:hover {
+  text-decoration: underline;
+}
+.two {
+  background-color: #00c1b5;
+  transition: all 700ms ease 0s;
+}
+.three {
+  background-color: #ff651a;
+  transition: all 700ms ease 0s;
+}
+.four {
+  background-color: #ffbe00;
+  transition: all 700ms ease 0s;
+}
+.five {
+  background-color: #1d3fbb;
+  transition: all 700ms ease 0s;
+}
+.six {
+  background-color: #e30512;
+  transition: all 700ms ease 0s;
+}
+
+.pera {
+  position: absolute;
+  bottom: 25px;
+  z-index: 100;
+  left: 22px;
+  width: 320px;
+  margin-top: 0;
+}
+.pera p {
+  color: #251d20;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 25px;
+  margin-bottom: 1.5em;
+}
+.pera a {
+  color: #251d20;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.menu {
+  position: absolute;
+  z-index: 100;
+  right: 15px;
+  top: 20px;
+  z-index: 100;
+  height: 100vh;
+}
+.menu p a {
+  color: #251d20;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.menu-list-item {
+  position: absolute;
+  z-index: 100;
+  bottom: 30px;
+  right: 15px;
+  width: 200px;
+  text-align: right;
+  list-style: none;
+  line-height: 1.6;
+}
+.menu-list-item a {
+  color: #251d20;
+  font-size: 18px;
+  text-decoration: none;
+}
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 15px;
+  z-index: 100;
+  width: 260px;
+}
+
+.img {
+  width: 420px;
+}
